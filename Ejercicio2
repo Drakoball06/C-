@@ -1,0 +1,70 @@
+//EJERCICIO 1
+Console.WriteLine("Cual es tu nombre? ");
+String nombre = Console.ReadLine();
+Console.WriteLine("Cual es tu apellido? ");
+String apellido = Console.ReadLine();
+Console.WriteLine("Que edad tienes? ");
+String edad = Console.ReadLine();
+int edad1 = Convert.ToInt32(edad);
+Console.WriteLine("Sabes programar? ");
+String respu = Console.ReadLine();
+
+Console.WriteLine("Bienvenido Usuario: " + nombre + " " + apellido + ", su edad es: " + edad1 + " y usted: " + respu + " sabe programar.");
+
+//EJERCICIO 2.1
+Console.WriteLine("Bienvenido");
+Console.WriteLine("¿Cuántas puertas tiene su carro?");
+String puertas = Console.ReadLine();
+int puertas1 = Convert.ToInt32(puertas);
+Console.WriteLine("¿Cuántas ruedas tiene su carro?");
+String ruedas = Console.ReadLine();
+int ruedas1 = Convert.ToInt32(puertas);
+Console.WriteLine("¿Qué marca es su carro?");
+String marca = Console.ReadLine();
+Console.WriteLine("¿Cuenta con ITV vigente?");
+String itv = Console.ReadLine();
+
+//EJERCICIO 2.2
+Console.WriteLine("Bienvenido");
+Console.WriteLine("¿Cuánto pesa su mesa?");
+String peso = Console.ReadLine();
+int peso1 = Convert.ToInt32(puertas);
+Console.WriteLine("¿Cuánto es el largo de su mesa?");
+String largo = Console.ReadLine();
+float largo1 = Convert.ToInt32(puertas);
+Console.WriteLine("¿De qué material está hecho su mesa?");
+String material = Console.ReadLine();
+Console.WriteLine("¿De que color es su mesa?");
+String color = Console.ReadLine();
+
+//EJERCICIO 3
+Console.WriteLine("Ingrese un número porfavor");
+String numero = Console.ReadLine();
+int numero1 = Convert.ToInt32(numero);
+if(numero1 > 18)
+{
+    Console.WriteLine("El número es mayor a 18");
+}
+else
+{
+    Console.WriteLine("El número es menor a 18");
+}
+
+Console.WriteLine("Ingrese una letra");
+String letra = Console.ReadLine();
+char l = Convert.ToChar(letra);
+if( l == 'a')
+{
+    Console.WriteLine("Hay una a");
+}
+else
+{
+    Console.WriteLine("Escribe bien");
+}
+
+int zero = 0;
+int un = 0;
+int deux = 1;
+Console.WriteLine( zero == un && zero < deux);
+Console.WriteLine(zero > deux || zero == un);
+
