@@ -1,0 +1,26 @@
+//Creación del objetoCoords misCoordenadas = new Coords(2,10,5);
+Coords cliente1 = new Coords("Yossef", 948581894, "Av. Paseo de la República", "yossefhm4@gmail.com", "Si");
+Console.WriteLine(cliente1.nombre);
+Console.WriteLine(cliente1.telefono);
+Console.WriteLine(cliente1.dir);
+Console.WriteLine(cliente1.email);
+Console.WriteLine(cliente1.nuevo);
+//Definición del objeto
+
+public struct Coords
+{
+    public Coords (String nombre, int telefono, String dir, String email, String nuevo)
+    {
+        this.nombre = nombre;
+        this.telefono = telefono;
+        this.dir = dir;
+        this.email = email;
+        this.nuevo = nuevo;
+    }
+    
+    public String nombre { get; set; }
+    public int telefono { get; set; }
+    public String dir { get; set; }
+    public String email { get; set; }
+    public String nuevo { get; set; }
+}
